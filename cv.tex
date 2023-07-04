@@ -24,27 +24,15 @@
 \usepackage{CJKutf8}
 \usepackage[style=apa]{biblatex}
 \addbibresource{bibliography.bib}
+\DeclareFieldFormat{apacase}{#1}
 \usepackage{csquotes}
 \usepackage{lastpage}
+\usepackage{etaremune}
 % \usepackage{natbib}
 % \usepackage{bibentry}
 % \nobibliography*
 % \bibliographystyle{agsm}
 % \setcitestyle{square,aysep={}}
-
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 
 % \fancyfoot{}
@@ -146,9 +134,12 @@
 \begin{center}
     \textbf{\Huge \scshape Mark K. Wang\hspace{-4mm}\begin{CJK*}{UTF8}{gbsn}
 （王凯章）\end{CJK*}} \\ \vspace{3pt}
-    \small \href{mailto:mark.wang@utexas.edu}{\faIcon{envelope} mark.wang@utexas.edu} $|$ \href{https://mark-wang.com}{\faIcon{globe-americas} mark-wang.com} $|$ \href{https://linkedin.com/in/markkwang}{\faIcon{linkedin} markkwang} $|$ \href{https://github.com/markwang0}{\faIcon{github} markwang0} $|$ \href{https://twitter.com/__markwang}{\faIcon{twitter} \_\_markwang} \\ \vspace{1pt}
-    \small Center for Water and the Environment, Room 44 \\ \vspace{1pt}
-    \small 10100 Burnet Road Bldg. 119, Austin, TX  78758 \\ \vspace{1pt}
+    \small \href{mailto:mark.wang@utexas.edu}{\faIcon{envelope} mark.wang@utexas.edu} $|$ 
+    \href{https://mark-wang.com}{\faIcon{globe-americas} mark-wang.com} $|$ 
+    \href{https://linkedin.com/in/markkwang}{\faIcon{linkedin} markkwang} $|$ 
+    \href{https://github.com/markwang0}{\faIcon{github} markwang0} $|$ 
+    \href{https://twitter.com/__markwang}{\faIcon{twitter} \_\_markwang} \\ \vspace{1pt}
+    \small Center for Water and the Environment, J.J. Pickle Research Campus, Austin, TX \\ \vspace{1pt}
     % \href{https://github.com/x}{\underline{github.com/x}}
 \end{center}
 
@@ -159,23 +150,25 @@
   
     \resumeSubheadingUT
       {The University of Texas at Austin}{Austin, TX}
-      {Doctor of Philosophy $|$ Civil Engineering}{Expected May 2025}
-      {Master of Science $|$ Environmental and Water Resources Engineering}{May 2022}
-      \resumeItemListStart
-        \resumeItem{Thesis: Near Real-Time Coastal Flood Mapping}   
-      \resumeItemListEnd        
+      {Doctor of Philosophy $|$ \normalfont{Civil Engineering}}{Expected May 2025}
+      {Master of Science $|$ \normalfont{Environmental and Water Resources Engineering}}{May 2022}
+      % \resumeItemListStart
+      %   \resumeItem{Thesis: Near Real-Time Coastal Flood Mapping}   
+      % \resumeItemListEnd        
         
-    % \vspace{1.3mm}
+    \vspace{1.3mm}
         
     \resumeSubheading
       {Columbia University}{New York, NY}
-      {Bachelor of Science $|$ Civil Engineering $|$ Water Resources Concentration}{May 2016}
+      {Bachelor of Science $|$ \normalfont{Civil Engineering} $|$ 
+			\normalfont{Water Resources Concentration}}{May 2016}
         
     \vspace{1.3mm}
     
     \resumeSubheading
       {Franklin \& Marshall College}{Lancaster, PA}
-      {Bachelor of Arts $|$ Cognitive Science $|$ Music Minor}{May 2016}
+      {Bachelor of Arts $|$ \normalfont{Cognitive Science} $|$ 
+			\normalfont{Music Minor}}{May 2016}
 
   \resumeSubHeadingListEnd
 
@@ -184,19 +177,27 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {NOAA $|$ National Weather Service $|$ CUAHSI}{Tuscaloosa, AL}
-      {Summer Institute Fellow}{June 2022 – July 2022}
+      {National Weather Service $|$ NOAA $|$ CUAHSI}{Tuscaloosa, AL}
+      {2023 Summer Institute Course Coordinator}{June 2023 – July 2023}
       \resumeItemListStart
-        \resumeItem{Developed a GIS-based approach to couple riverine-coastal flood inundation}
-        \resumeItem{Supported efforts to improve the National Water Model's NextGen framework}
+        \resumeItem{Support 23 fellows researching flood prediction at the National Water Center}
+				\resumeItem{Compile and edit final report documenting six group projects}
+				\resumeItem{Plan institute's seven week timeline with faculty theme leaders}
       \resumeItemListEnd 
+			\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+				\textit{\small 2022 Summer Institute Fellow} & 
+				\textit{\small June 2022 – July 2022}
+			\end{tabular*}
+			\vspace{-7pt}
+			\resumeItemListStart
+				\resumeItem{Developed a GIS method for coupling riverine \& coastal inundation}
+			\resumeItemListEnd 
 
     \resumeSubheading
       {Fulbright Program, U.S. Department of State}{Zhuhai \& Shenzhen, China}
       {Research Grantee}{June 2019 – Feb 2020}
       \resumeItemListStart
-        \resumeItem{Studied low-impact development and green infrastructure in the Pearl River Delta}
-        \resumeItem{Investigated urban stormwater management techniques and their underlying policy in China}
+        \resumeItem{Studied low-impact development and stormwater management policy in the Pearl River Delta}
       \resumeItemListEnd 
      
     \resumeSubHeadingListEnd
@@ -208,7 +209,7 @@
       {Water Utility, City of Austin}{Austin, TX}
       {Systems Planning Engineering Intern}{Mar 2020 – Sep 2020}
       \resumeItemListStart
-        \resumeItem{Wrote python scripts for automatic storm event and sewer peak flow analysis}
+        \resumeItem{Automated storm event and sewer peak flow analysis with Python scripts}
         \resumeItem{Maintained GIS databases for long-range water infrastructure planning}
       \resumeItemListEnd
       
@@ -217,7 +218,7 @@
       {Civil Engineer}{Oct 2017 – June 2019}
       \resumeItemListStart
         \resumeItem{Performed hydrologic site analyses under pre- and post-development conditions}
-        \resumeItem{Designed stormwater infiltration and attenuation systems for water quality and flow rate control}
+        \resumeItem{Designed stormwater management systems to control water quality and flow rate}
         % \resumeItem{Completed floodplain analyses, reports, and supporting calculations}
       \resumeItemListEnd
       
@@ -235,37 +236,39 @@
 %-----------PUBLICATIONS-----------
 % \nobibliography{ref}
 \section{Publications \& Presentations}
-\begin{enumerate}
-  \item \fullcite{pt2050_april22}
+\begin{etaremune}
+  \item \fullcite{2022AGUFM_c-hand}
+  \item \fullcite{2022AGUFM_quicfim}
+  \item \fullcite{2022AGUFM_future-floods}
   \item \fullcite{shetty2022water}    
   \item \fullcite{shetty2022comparing}
   \item \fullcite{shetty2019bioswales}
   \item \fullcite{nashville}
-\end{enumerate}
+\end{etaremune}
 
 
 %-----------GRANTS & AWARDS-----------
 \section{Grants \& Awards}
   \resumeSubHeadingListStart
-      
-    \resumeSubheadingSkills
-      {National Science Foundation}{}
-      \resumeItemListStart
-        \resumeItem{Graduate Research Fellowship $|$ \$102,000\hspace*{\fill}\textit{2020 – Present}}
-      \resumeItemListEnd
-      
+
     \resumeSubheadingSkills
       {The University of Texas at Austin}{}
       \resumeItemListStart
         \resumeItem{John E. Kasch Endowed Graduate Fellowship in Engineering\hspace*{\fill}\textit{2020 – Present}}
         \resumeItem{Dean’s Prestigious Fellowship Supplement\hspace*{\fill}\textit{2020 – Present}}
-      \resumeItemListEnd  
+      \resumeItemListEnd
+      
+		\resumeSubheadingSkills
+			{National Science Foundation}{}
+			\resumeItemListStart
+				\resumeItem{Graduate Research Fellowship \hspace*{\fill}\textit{2020 – 2023}}
+			\resumeItemListEnd
       
     \resumeSubheadingSkills
       {Fulbright Program, U.S. Department of State}{}
       \resumeItemListStart
-        \resumeItem{Study/Research Award $|$ \$23,300\hspace*{\fill}\textit{2019 – 2020}}
-        \resumeItem{Critical Language Enhancement Award $|$ \$16,740\hspace*{\fill}\textit{2019}}
+        \resumeItem{Study/Research Award \hspace*{\fill}\textit{2019 – 2020}}
+        \resumeItem{Critical Language Enhancement Award \hspace*{\fill}\textit{2019}}
       \resumeItemListEnd                
       
     \resumeSubheadingSkills
@@ -279,22 +282,34 @@
     \resumeSubHeadingListEnd
 
 
-%-----------MISC-----------
-\section{Skills \& Miscellaneous}
+\section{Skills \& Licenses}
 
   \resumeSubHeadingListStart
 
     \resumeSubheadingSkills
-      {Computational}{}
+      {Programming Languages}{}
       \resumeItemListStart
-        \resumeItem{Python $|$ MATLAB $|$ Git $|$ Slurm $|$ Unix shell $|$ ArcGIS Pro $|$ QGIS $|$ \LaTeX{} $|$ HEC-RAS $|$ AutoCAD}
-      \resumeItemListEnd   
+        \resumeItem{\textbf{Advanced:} Python, MATLAB $|$ 
+          \textbf{Intermediate:} Unix shell, \TeX{}, Julia $|$ 
+          \textbf{Beginner:} Ruby, JavaScript, C}
+      \resumeItemListEnd
+
+			\resumeSubheadingSkills
+      {Programming Tools}{}
+      \resumeItemListStart
+        \resumeItem{Unix, Git, NumPy, Matplotlib, Pandas, SciPy, scikit-learn, PyTorch, Slurm (HPC), OOP paradigm}
+      \resumeItemListEnd
+
+			\resumeSubheadingSkills
+      {GIS \& Engineering Tools}{}
+      \resumeItemListStart
+        \resumeItem{ArcGIS Pro, QGIS, GDAL, GeoPandas, Rasterio, GRASS GIS, AutoCAD, SWMM, HEC-RAS}
+      \resumeItemListEnd
 
     \resumeSubheadingSkills
-      {Languages}{}
+      {Natural Languages}{}
       \resumeItemListStart
-        \resumeItem{English (native speaker)}
-        \resumeItem{Mandarin Chinese (professional working proficiency)}        
+        \resumeItem{\textbf{Native:} English $|$ \textbf{Working proficiency:} Mandarin Chinese (spoken and written)}
       \resumeItemListEnd     
 
     \resumeSubheadingSkills
@@ -302,9 +317,16 @@
       \resumeItemListStart
         \resumeItem{Engineer-in-Training (Pennsylvania License No. ET023499)}
       \resumeItemListEnd   
+
+  \resumeSubHeadingListEnd
+
+
+	\section{Open Online Courses}
+
+  \resumeSubHeadingListStart
       
     \resumeSubheadingSkills
-      {Completed Coursera Courses}{}
+      {Coursera}{}
       \resumeItemListStart
         \resumeItem{Machine Learning with Python \href{https://www.credly.com/badges/aa1a8fa4-685e-4c89-a80c-e6a943a3a282/public_url}{[link to credential]}}
         \resumeItem{Computer Vision and Image Processing Essentials \href{https://www.credly.com/badges/9eb51528-f7f5-454e-bea7-d2e6a3f1beb2/public_url}{[link to credential]}} 
@@ -312,64 +334,5 @@
       \resumeItemListEnd  
 
   \resumeSubHeadingListEnd
-  
-%-------------------------------------------
+
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% %-----------COMMUNITY AND LEADERSHIP-----------
-% \section{Community \& Leadership}
-%   \resumeSubHeadingListStart
-
-%     \resumeSubheading
-%       {Role 1}{November 2021 – Present}
-%       {Club/Organization 1}{Melbourne, VIC}
-%       \resumeItemListStart
-%         \resumeItem{Job description/Award/Achievement 1}
-%         \resumeItem{Job description/Award/Achievement 2}
-%         \resumeItem{Job description/Award/Achievement 3}
-%       \resumeItemListEnd
-      
-%     \resumeSubheading
-%       {Role 2}{November 2021 – Present}
-%       {Club/Organization 2}{Melbourne, VIC}
-%       \resumeItemListStart
-%         \resumeItem{Job description/Award/Achievement 1}
-%         \resumeItem{Job description/Award/Achievement 2}
-%         \resumeItem{Job description/Award/Achievement 3}
-%       \resumeItemListEnd
-
-%     \resumeSubHeadingListEnd
-
-% %-----------PROJECTS-----------
-% \section{Projects}
-
-%     \resumeSubHeadingListStart
-%       \resumeProjectHeading
-%           {\textbf{Project Title 1} $|$ \emph{Technologies used}}{June 2021 -- Present}
-%           \resumeItemListStart
-%             \resumeItem{Project Description 1}
-%             \resumeItem{Project Description 2}
-%           \resumeItemListEnd
-
-%       \resumeProjectHeading
-%           {\textbf{Project Title 2} $|$ \emph{Technologies used}}{June 2021 -- Present}
-%           \resumeItemListStart
-%             \resumeItem{Project Description 1}
-%             \resumeItem{Project Description 2}
-%           \resumeItemListEnd
-         
-
-%     \resumeSubHeadingListEnd
